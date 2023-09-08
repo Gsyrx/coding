@@ -9,7 +9,7 @@ def largest(arr, n):
 
     maxi = arr[0]
 
-    for i in range(1, n):
+    for i in range(n):
         if arr[i] > maxi:
             maxi = arr[i]
     return maxi
@@ -19,6 +19,6 @@ if __name__ == '__main__':
     arr = [10, 324, 45, 90, 9808]
     n = len(arr)
 
-    Ans = largest(arr, n)
+    ans = largest(arr, n)
 
-    print("Largest in given array is", Ans)
+    print("Largest in given array is", ans)
